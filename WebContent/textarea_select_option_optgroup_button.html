@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>textarea</h1>
+		<form>
+			<label>메세지:</label>
+			<textarea name="message" rows="5" cols="30" placeholder="메세지를 입력하세요"></textarea>
+		</form>
+	
+	<hr>
+	
+		<h1>select</h1>
+			<form>
+				<label for="food">좋아하는 음식:</label>
+				<select>
+					<option value="pizza">피자</option>
+					<option value="burger">햄버거</option>
+					<option value="sushi">스시</option>
+					
+				
+				</select>
+			</form>
+			
+		<select name="languge">
+			<option value="korean">한국어</option>
+			<option value="english">영어</option>
+			<option value="japanese" selected>일본어</option>
+		</select>
+	
+	<hr>
+	
+		<h1>optgroup</h1>
+		
+		<form>
+			<label for="meal">선호하는 음식:</label>
+			<select id="meal" name="meal">
+				<optgroup label="한식">
+					<option value="bibibap">비빔밥</option>
+					<option value="bulgogi">불고기</option>
+				</optgroup>
+				
+				<optgroup label="양식">
+					<option value="pasta">파스타</option>
+					<option value="stake">스테이크</option>
+				</optgroup>
+			</select>
+		</form>
+	
+	<hr>
+	
+		<h1>button</h1>
+		
+		<form action="/HTML5/main.jsp" method="post">
+		
+			이름 : <input type="text" name="username"> <br>
+			나이 : <input type="number" name="userage"> <br>
+			
+			<button type="submit">main.jsp요청</button>
+			<button type="reset">입력값 취소</button>
+		
+		</form>
+	
+	
+	
+</body>
+</html>

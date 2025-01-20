@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!-- 
+		<form></form> 태그?
+			- <form>태그는 몇 가지 속성을 사용해서 입력받은 자료를 어떤 전송 방식으로
+			톰캣 서버가 실행하는 .jsp(서버페이지)로 넘겨 처리할 것인지 지정하는 태그입니다.
+			- 기본 문법
+				<form 속성명="속성값">
+					여러 폼 요소들.....
+					<input>
+					<button>회원가입요청</button>
+				</form>
+				
+			- <form>태그의 속성 종류들
+				1. method 속성 : 클라이언트가 입력한 내용들을 서버 쪽 프로그램(.jsp)로
+							       어떻게 넘겨 줄 것인지 지정하는 속성으로 값은 get 또는 post 둘 중 하나를 사용함.	
+							     
+					get 전송방식 ?
+						- 요청하는 데이터를 256byte ~ 4,096byte 크기까지만 
+						    서버페이지 쪽으로 전달해서 요청 할 수 있는 전송방식입니다.
+					    - 웹브라우저 주소표시줄에 사용자가 입력한 요청할 데이터가
+					      URL주소와 함께 그대로 *노출*된다는 단점이 있습니다.
+								  
+					post 전송방식 ?
+						- 입력한 내용의 길이에 제한 받지 않고
+						    사용자가 입력한 내용도 주소창에 드러나지 않아 *보안*에 좋습니다.
+						    
+				2. name 속성 : 자바스크립트언어로 <form></form>내부에 작성된 <input>요소들을 제어할 때
+						     <form>태그의 이름을 설정할 때 사용하는 속성.
+						     
+				3. action 속성 : <form></form>으로 감싼 안 쪽 태그에 입력한 내용들을
+								톰캣서버가 실행하는 .java 또는 .jsp에 요청 전달하기 위해
+								톰캣서버가 실행하는 .java 또는 .jsp파일이 저장된 경로를 작성하는 속성
+								
+				4. target 속성 : action 속성에서 지정한 서버페이지를 현재 웹브라우저 창이 아닌 다른 창을 띄워서 요청할 수 있도록 설정하는 속성.
+				
+				5. autocomplete 속성
+					- <form></form>으로 감싸져 있는 자식태그에 데이터를 입력할 때
+					    한번이라도 입력한 내용을 자동으로 표시해 주는 속성입니다.
+					    기본값은 "on"입니다. "off"로 지정하면 자동완성 기능을 해제할 수 있다.
+								
+	 -->
+
+	<form	action="main.jsp"	name="f1"	method="get" autocomplete="off">
+		
+		<fieldset>
+			<legend>상품선택</legend>	
+				<label>아이디(6자이상):<input></label>
+		</fieldset>
+		
+		<fieldset>
+			<legend>배송정보</legend>
+				<label for="user-id">아이디(6자이상):</label><input id="user-id">
+			
+		</fieldset>
+		
+	
+	</form>
+
+
+
+
+
+
+
+</body>
+</html>
