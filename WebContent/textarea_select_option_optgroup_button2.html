@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!-- 
+		/	는 서버의 루트 경로를 가리킵니다.
+		
+		/	는 http://local.host:8090/		절대경로
+	 -->
+	 
+	 <form action="/HTML5/main.jsp" method="GET">
+	 
+	 	<!-- label : 사용자가 입력해야 할 <input>에 대한 설명 제공 -->
+	 	<label for="comments">의견:</label>
+	 	
+	 	<!-- textarea : 사용자가 여러 줄의 텍스트를 입력할 수 있는 필드 -->
+	 	<!-- id속성 : label태그와 연결되는 고유 식별자 -->
+	 	<!-- name속성 : 서버로 전송할 데이터의 이름 -->
+	 	<!-- rows속성 : 텍스트 입력 필드의 높이(행 수) -->
+	 	<!-- cols속성 : 텍스트 입력 필드의 너비(열 수) -->
+	 	<!-- placeholder속성 : 입력 전 표시되는 힌트메세지 보여주는 속성 -->
+	 	<textarea id="comments" 
+	 			  name="comments"
+	 			  rows="4"
+	 			  cols="50"
+	 			  placeholder="의견을 작성해 주세요">
+	 	</textarea>	
+	 	<br><br>
+	 	
+	 	<label for="hobby">취미:</label>
+	 	
+	 	<!-- select : 드롭다운 리스트를 생성 -->
+	 	<!-- id속성 : label 태그와 연결되는 고유 식별자 -->
+	 	<!-- name속성 : 톰캣서버가 실행하는 동적인 jsp(서버페이지) 요청 시 전달할 데이터의 이름 -->
+	 	
+	 	<select id="hobby" name="hobby">
+	 		<!-- optgroup : 선택지를 그룹화하여 카테고리로 나누는 태그 -->
+	 		<!-- label속성 : 그룹의 이름을 정의 -->
+	 		<optgroup label="운동">
+	 			<!-- option : 드롭다운 메뉴 항목 아이템이자 선택지 -->
+	 			<!-- value속성 : 서버페이지로 전송되는 값 설정 -->
+	 			<option value="soccer">축구</option>
+	 			<option value="baseketball">농구</option>	 		
+	 		</optgroup>
+	 		<optgroup label="예술">
+	 			<option value="drawing">그림그리기</option>
+	 			<option value="music">음악감상</option>
+	 		</optgroup>
+	 	</select>
+	 	
+	 	<br><br>
+	 	
+	 	<!-- button : 사용자가 클릭할 수 있는 버튼 -->
+	 	<!-- type="submit" : 폼 양식에 입력된 데이터를 서버페이지 요청시 전달할 수 있는 전송 버튼으로 만듬 -->
+	 	<button type="submit">제출하기</button>
+	 	
+	 	<!-- type="reset" : 입력 필드 내용을 초기화 -->
+	 	<button type="reset">초기화</button>
+	  
+	 </form>
+
+</body>
+</html>
