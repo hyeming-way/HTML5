@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>scope 속성 예제</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 60%;
+      margin: 20px auto;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      text-align: center;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+	<h1>scope 속성으로 웹 접근성 향상</h1>
+	<table>
+		<thead>
+			<tr>
+				<th scope="col">과목</th>
+				<th scope="col">월요일</th>
+				<th scope="col">화요일</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">수학</th>
+				<td>9:00 ~ 10:00</td>
+				<td>10:00 ~ 11:00</td>
+			</tr>
+			<tr>
+				<th scope="row">영어</th>
+				<td>10:00 ~ 11:00</td>
+				<td>11:00 ~ 12:00</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
